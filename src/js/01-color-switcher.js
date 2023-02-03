@@ -11,7 +11,7 @@ refs.btnStop.addEventListener('click', onBtnStopClick);
 refs.btnStop.disabled = true;
 
 function onBtnStartClick(){
-    intervalID = setInterval(() => {
+    const intervalID = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
     }, 1000)
     refs.btnStart.disabled = true;
