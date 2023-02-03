@@ -9,9 +9,9 @@ refs.btnStart.addEventListener('click', onBtnStartClick);
 refs.btnStop.addEventListener('click', onBtnStopClick);
 
 refs.btnStop.disabled = true;
-
+let intervalID = 0;
 function onBtnStartClick(){
-    const intervalID = setInterval(() => {
+     intervalID = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
     }, 1000)
     refs.btnStart.disabled = true;
